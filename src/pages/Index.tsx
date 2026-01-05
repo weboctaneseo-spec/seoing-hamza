@@ -1,13 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Layout } from "@/components/layout/Layout";
+import { HeroSection } from "@/components/home/HeroSection";
+import { ServicesSection } from "@/components/home/ServicesSection";
+import { WhyChooseUs } from "@/components/home/WhyChooseUs";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { CitiesSection } from "@/components/home/CitiesSection";
+import { CTASection } from "@/components/home/CTASection";
+import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      <Helmet>
+        <title>Befiller - Expert Tax & Accounting Services for Overseas Pakistanis</title>
+        <meta 
+          name="description" 
+          content="Pakistan's #1 tax filing service for overseas Pakistanis. Expert tax filing, NTN registration, business registration, and accounting services by Hamza & Abdul Hadi. Available 24/7." 
+        />
+        <meta name="keywords" content="tax filing Pakistan, NTN registration, overseas Pakistani taxes, FBR tax return, Pakistan tax consultant, expat tax services" />
+        <link rel="canonical" href="https://befiller.pk" />
+      </Helmet>
+      
+      <HeroSection />
+      <ServicesSection />
+      <WhyChooseUs />
+      <CitiesSection />
+      <TestimonialsSection />
+      <CTASection />
+    </Layout>
   );
 };
 
