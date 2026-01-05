@@ -101,6 +101,15 @@ export const Header = () => {
               </DropdownMenu>
 
               <Link
+                to="/tax-calculator"
+                className={`font-medium transition-colors hover:text-primary ${
+                  isActive("/tax-calculator") ? "text-primary" : "text-foreground"
+                }`}
+              >
+                Tax Calculator
+              </Link>
+
+              <Link
                 to="/about"
                 className={`font-medium transition-colors hover:text-primary ${
                   isActive("/about") ? "text-primary" : "text-foreground"
@@ -172,6 +181,9 @@ export const Header = () => {
                   </Link>
                 ))}
               </div>
+              <Link to="/tax-calculator" className="block py-2 font-medium" onClick={() => setIsOpen(false)}>
+                Tax Calculator
+              </Link>
               <Link to="/about" className="block py-2 font-medium" onClick={() => setIsOpen(false)}>
                 About Us
               </Link>
