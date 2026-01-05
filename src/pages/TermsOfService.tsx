@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Helmet } from "react-helmet-async";
+import { StructuredData } from "@/components/StructuredData";
 
 const TermsOfService = () => {
   return (
@@ -8,6 +9,12 @@ const TermsOfService = () => {
         <title>Terms of Service - Befiller Pakistan</title>
         <meta name="description" content="Terms of Service for Befiller tax and accounting services. Read our terms and conditions for using our services." />
       </Helmet>
+      <StructuredData 
+        type="legal"
+        pageTitle="Terms of Service - Befiller Pakistan"
+        pageDescription="Terms of Service for Befiller tax and accounting services. Read our terms and conditions for using our services."
+        pageUrl="https://befiller.pk/terms-of-service"
+      />
 
       <section className="hero-gradient py-16">
         <div className="container">

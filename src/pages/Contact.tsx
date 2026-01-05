@@ -6,6 +6,7 @@ import { Phone, Mail, MapPin, Clock, MessageCircle, Send } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { StructuredData } from "@/components/StructuredData";
 
 const contactInfo = [
   {
@@ -60,6 +61,12 @@ const Contact = () => {
           content="Contact Befiller for expert tax and accounting services. Available 24/7 for overseas Pakistanis. Call +92 300 1234567 or email info@befiller.pk." 
         />
       </Helmet>
+      <StructuredData 
+        type="contact"
+        pageTitle="Contact Us - Befiller Pakistan Tax Services"
+        pageDescription="Contact Befiller for expert tax and accounting services. Available 24/7 for overseas Pakistanis."
+        pageUrl="https://befiller.pk/contact"
+      />
 
       {/* Hero */}
       <section className="hero-gradient py-20">
