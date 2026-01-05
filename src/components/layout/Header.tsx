@@ -110,6 +110,15 @@ export const Header = () => {
               </Link>
 
               <Link
+                to="/ntn-verification"
+                className={`font-medium transition-colors hover:text-primary ${
+                  isActive("/ntn-verification") ? "text-primary" : "text-foreground"
+                }`}
+              >
+                NTN Verification
+              </Link>
+
+              <Link
                 to="/about"
                 className={`font-medium transition-colors hover:text-primary ${
                   isActive("/about") ? "text-primary" : "text-foreground"
@@ -183,6 +192,9 @@ export const Header = () => {
               </div>
               <Link to="/tax-calculator" className="block py-2 font-medium" onClick={() => setIsOpen(false)}>
                 Tax Calculator
+              </Link>
+              <Link to="/ntn-verification" className="block py-2 font-medium" onClick={() => setIsOpen(false)}>
+                NTN Verification
               </Link>
               <Link to="/about" className="block py-2 font-medium" onClick={() => setIsOpen(false)}>
                 About Us

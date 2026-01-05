@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import TaxCalculator from "./pages/TaxCalculator";
+import NTNVerification from "./pages/NTNVerification";
 import Contact from "./pages/Contact";
 import ServicePage from "./pages/ServicePage";
 import CityPage from "./pages/CityPage";
@@ -93,6 +94,7 @@ const AppRoutes = () => {
         <Routes location={displayLocation}>
           <Route path="/" element={<Index />} />
           <Route path="/tax-calculator" element={<TaxCalculator />} />
+          <Route path="/ntn-verification" element={<NTNVerification />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services/:service" element={<ServicePage />} />
