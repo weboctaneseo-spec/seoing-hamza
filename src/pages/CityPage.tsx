@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2, ArrowRight, Phone, FileText, Building2, Calculator } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { CTASection } from "@/components/home/CTASection";
+import { StructuredData } from "@/components/StructuredData";
 
 const cityData: Record<string, {
   name: string;
@@ -90,6 +91,13 @@ const CityPage = () => {
         />
         <meta name="keywords" content={`tax filing ${cityInfo.name}, NTN registration ${cityInfo.name}, tax consultant ${cityInfo.name}, FBR ${cityInfo.name}`} />
       </Helmet>
+      <StructuredData 
+        type="city"
+        pageTitle={`Tax Filing Services in ${cityInfo.name} - Befiller Pakistan`}
+        pageDescription={`Expert tax filing, NTN registration, and accounting services in ${cityInfo.name}. Professional tax solutions for individuals and businesses.`}
+        pageUrl={`https://befiller.pk/cities/${city}`}
+        cityName={cityInfo.name}
+      />
 
       {/* Hero */}
       <section className="hero-gradient py-20">

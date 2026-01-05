@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Helmet } from "react-helmet-async";
+import { StructuredData } from "@/components/StructuredData";
 
 const RefundPolicy = () => {
   return (
@@ -8,6 +9,12 @@ const RefundPolicy = () => {
         <title>Refund Policy - Befiller Pakistan</title>
         <meta name="description" content="Refund Policy for Befiller tax and accounting services. Learn about our refund and cancellation policies." />
       </Helmet>
+      <StructuredData 
+        type="legal"
+        pageTitle="Refund Policy - Befiller Pakistan"
+        pageDescription="Refund Policy for Befiller tax and accounting services. Learn about our refund and cancellation policies."
+        pageUrl="https://befiller.pk/refund-policy"
+      />
 
       <section className="hero-gradient py-16">
         <div className="container">

@@ -1,8 +1,9 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Users, Target, Award, Heart, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Users, Target, Award, Heart, ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { StructuredData } from "@/components/StructuredData";
 
 const values = [
   {
@@ -37,6 +38,12 @@ const About = () => {
           content="Learn about Befiller, founded by Hamza & Abdul Hadi. Expert tax consultants serving 50,000+ overseas Pakistanis with professional tax filing and accounting services." 
         />
       </Helmet>
+      <StructuredData 
+        type="about"
+        pageTitle="About Us - Befiller Pakistan Tax Consultants"
+        pageDescription="Learn about Befiller, founded by Hamza & Abdul Hadi. Expert tax consultants serving 50,000+ overseas Pakistanis."
+        pageUrl="https://befiller.pk/about"
+      />
 
       {/* Hero */}
       <section className="hero-gradient py-20">

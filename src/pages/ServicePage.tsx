@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2, ArrowRight, Phone, Clock, Shield, Star } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { CTASection } from "@/components/home/CTASection";
+import { StructuredData } from "@/components/StructuredData";
 
 const servicesData: Record<string, {
   title: string;
@@ -152,6 +153,13 @@ const ServicePage = () => {
         <meta name="description" content={serviceInfo.description} />
         <meta name="keywords" content={`${serviceInfo.title} Pakistan, ${serviceInfo.title} service, Befiller ${service}`} />
       </Helmet>
+      <StructuredData 
+        type="service"
+        pageTitle={`${serviceInfo.title} - Befiller Pakistan Tax Services`}
+        pageDescription={serviceInfo.description}
+        pageUrl={`https://befiller.pk/services/${service}`}
+        serviceName={serviceInfo.title}
+      />
 
       {/* Hero */}
       <section className="hero-gradient py-20">

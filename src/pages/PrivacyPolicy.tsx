@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Helmet } from "react-helmet-async";
+import { StructuredData } from "@/components/StructuredData";
 
 const PrivacyPolicy = () => {
   return (
@@ -8,6 +9,12 @@ const PrivacyPolicy = () => {
         <title>Privacy Policy - Befiller Pakistan</title>
         <meta name="description" content="Privacy Policy for Befiller tax and accounting services. Learn how we collect, use, and protect your personal information." />
       </Helmet>
+      <StructuredData 
+        type="legal"
+        pageTitle="Privacy Policy - Befiller Pakistan"
+        pageDescription="Privacy Policy for Befiller tax and accounting services. Learn how we collect, use, and protect your personal information."
+        pageUrl="https://befiller.pk/privacy-policy"
+      />
 
       <section className="hero-gradient py-16">
         <div className="container">

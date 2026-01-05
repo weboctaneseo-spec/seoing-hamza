@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Calculator, TrendingUp, PiggyBank, Users, FileText, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { StructuredData } from "@/components/StructuredData";
 
 // Tax slabs for salaried individuals (FY 2024-2025)
 const salariedSlabs = [
@@ -109,6 +110,12 @@ const TaxCalculator = () => {
         />
         <link rel="canonical" href="https://befiller.pk/tax-calculator" />
       </Helmet>
+      <StructuredData 
+        type="calculator"
+        pageTitle="Pakistan Income Tax Calculator 2024-2025 | Befiller"
+        pageDescription="Calculate your Pakistan income tax for FY 2024-2025. Free online tax calculator for salaried and non-salaried individuals."
+        pageUrl="https://befiller.pk/tax-calculator"
+      />
 
       {/* Hero Section */}
       <section className="hero-gradient text-primary-foreground py-16 md:py-24">
