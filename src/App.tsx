@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import About from "./pages/About";
+import TaxCalculator from "./pages/TaxCalculator";
 import Contact from "./pages/Contact";
 import ServicePage from "./pages/ServicePage";
 import CityPage from "./pages/CityPage";
@@ -25,6 +26,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/tax-calculator" element={<TaxCalculator />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/services/:service" element={<ServicePage />} />
